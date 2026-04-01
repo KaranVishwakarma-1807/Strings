@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strings | Text Physics Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero panel">
+      <p class="kicker">Interactive Text Simulation</p>
+      <h1>Pull. Tie. Cut. Text.</h1>
+      <p class="subhead">Turn letters or words into a physical string chain. Drag tokens, pin knots, and cut phrases into new pieces.</p>
+    </header>
+
+    <section class="panel setup">
+      <label for="sourceText">Your String</label>
+      <textarea id="sourceText" rows="3">HELLO STRING WORLD</textarea>
+      <div class="mode-row" role="group" aria-label="Token mode">
+        <button class="mode active" data-mode="char">Characters</button>
+        <button class="mode" data-mode="word">Words</button>
+      </div>
+      <div class="actions">
+        <button id="spawnString">Spawn String</button>
+        <button id="resetScene" class="ghost">Reset Scene</button>
+      </div>
+    </section>
+
+    <section class="panel controls">
+      <div class="tool-group" role="group" aria-label="String tools">
+        <button class="tool active" data-tool="pull">Pull</button>
+        <button class="tool" data-tool="tie">Tie</button>
+        <button class="tool" data-tool="cut">Cut</button>
+      </div>
+      <p id="toolHint" class="hint"></p>
+      <p id="selectionInfo" class="hint"></p>
+      <div class="actions precision-actions">
+        <button id="actionPull">Grab Selected</button>
+        <button id="actionTie">Tie/Untie Selected</button>
+        <button id="actionCut">Cut Selected Link</button>
+      </div>
+      <div class="shortcuts" aria-label="Keyboard shortcuts">
+        <p class="hint">Keyboard: <kbd>1</kbd> Pull, <kbd>2</kbd> Tie, <kbd>3</kbd> Cut, <kbd>G</kbd>/<kbd>Space</kbd> Grab, <kbd>T</kbd> Tie/Untie, <kbd>X</kbd> Cut, <kbd>N</kbd> Spawn, <kbd>R</kbd> Reset</p>
+      </div>
+    </section>
+
+    <section class="panel sim-panel">
+      <canvas id="simCanvas" aria-label="String simulation"></canvas>
+      <div class="hud">
+        <p id="objective"></p>
+        <p id="stats"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
