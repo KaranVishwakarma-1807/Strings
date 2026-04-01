@@ -1,47 +1,69 @@
 # Strings
 
-Interactive text-physics web app where users can pull, tie, and cut string chains made from letters, words, and characters.
+Strings is an interactive browser-based text physics playground.  
+It lets users simulate strings made of characters or words, then manipulate them with pull, tie, and cut interactions.
 
-## Run
+## Features
+
+- Real-time text-chain physics simulation
+- Token modes:
+  - `Characters`
+  - `Words`
+- Precision actions:
+  - `Grab Selected`
+  - `Tie/Untie Selected`
+  - `Cut Selected Link`
+- Keyboard-first control support
+- Lightweight static app (HTML, CSS, JavaScript)
+
+## Getting Started
+
+No build step is required.
 
 1. Open `index.html` in your browser.
-2. Type your text in `Your String`.
-3. Choose token mode:
-   - `Characters` to simulate each character.
-   - `Words` to simulate each word.
+2. Enter text in `Your String`.
+3. Choose token mode (`Characters` or `Words`).
 4. Click `Spawn String`.
-5. Move cursor over the exact token/link you want.
-6. Use action buttons for precision:
-   - `Grab Selected`: grab/release the selected token.
-   - `Tie/Untie Selected`: pin or unpin the selected token.
-   - `Cut Selected Link`: split the selected connection.
-7. Use `Reset Scene` anytime.
+5. Select a token or link on the canvas.
+6. Use action buttons or keyboard shortcuts to interact.
 
-## Keyboard shortcuts
+## Controls
 
-- `1`: select Pull tool
-- `2`: select Tie tool
-- `3`: select Cut tool
-- `G` or `Space`: grab/release selected token
-- `T`: tie/untie selected token
-- `X`: cut selected link
-- `N`: spawn string
-- `R`: reset scene
+### Mouse / UI
 
-Shortcuts are disabled while typing in the text input.
+- `Pull`, `Tie`, `Cut`: select interaction mode
+- `Grab Selected`: hold/release selected token
+- `Tie/Untie Selected`: pin/unpin selected token
+- `Cut Selected Link`: split selected connection
+- `Spawn String`: add a new string chain
+- `Reset Scene`: reset the simulation
 
-## Host on GitHub Pages
+### Keyboard Shortcuts
 
-1. Push this repo to GitHub on the `main` branch.
-2. In GitHub, go to `Settings` -> `Pages`.
-3. Under `Build and deployment`, select `Source: GitHub Actions`.
-4. Push any new commit to `main` and wait for the workflow to finish.
-5. Your site will be available at:
-   - `https://<your-username>.github.io/Strings/`
+- `1`: Pull tool
+- `2`: Tie tool
+- `3`: Cut tool
+- `G` or `Space`: Grab/Release selected token
+- `T`: Tie/Untie selected token
+- `X`: Cut selected link
+- `N`: Spawn string
+- `R`: Reset scene
 
-## Included interactions
+Note: Shortcuts are disabled while typing in the text input field.
 
-- Physics simulation for text token chains
-- Character and word modes
-- Pulling, tying, and cutting via precision action buttons
-- Objective tracker for ties and cuts
+## Deployment (GitHub Pages)
+
+This project includes a GitHub Actions workflow for Pages deployment.
+
+1. Push to the `main` branch.
+2. In GitHub, open `Settings` -> `Pages`.
+3. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+4. Push a new commit to trigger deployment.
+
+Your site URL will be:
+
+`https://<your-username>.github.io/Strings/`
+
+## License
+
+This project is distributed under the terms of the repository's `LICENSE` file.
