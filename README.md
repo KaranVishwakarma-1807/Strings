@@ -20,7 +20,7 @@ It lets users simulate strings made of characters or words, then manipulate them
 
 No build step is required.
 
-1. Open `index.html` in your browser.
+1. Open `https://karanvishwakarma-1807.github.io/Strings/` in your browser.
 2. Enter text in `Your String`.
 3. Choose token mode (`Characters` or `Words`).
 4. Click `Spawn String`.
@@ -50,19 +50,6 @@ No build step is required.
 - `R`: Reset scene
 
 Note: Shortcuts are disabled while typing in the text input field.
-
-## Deployment (GitHub Pages)
-
-This project includes a GitHub Actions workflow for Pages deployment.
-
-1. Push to the `main` branch.
-2. In GitHub, open `Settings` -> `Pages`.
-3. Under `Build and deployment`, set `Source` to `GitHub Actions`.
-4. Push a new commit to trigger deployment.
-
-Your site URL will be:
-
-`https://<your-username>.github.io/Strings/`
 
 ## License
 
